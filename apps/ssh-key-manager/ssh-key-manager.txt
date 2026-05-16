@@ -1,1 +1,1 @@
-SSH Key Manager — Generate, list, and copy SSH keys from within your Linux environment.
+Interactive SSH key manager. Generate, list, and copy keys for secure connections. Simplifies credential handling inside sessions.
