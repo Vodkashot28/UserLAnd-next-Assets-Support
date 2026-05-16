@@ -1,4 +1,4 @@
-App Name, Category, Filesystem Type Required, Supports CLI, Supports GUI, isPaidApp, Version
+App Name,Category,Filesystem Type Required,Supports CLI,Supports GUI,isPaidApp,Version
 Ubuntu, Distribution, ubuntu, true, true, false, 1
 Debian, Distribution, debian, true, true, false, 1
 Arch, Distribution, arch, true, true, false, 1
