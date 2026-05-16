@@ -1,0 +1,1 @@
+JupyterLab — Interactive notebook environment for Python, data science, and AI/ML workflows. Access via browser on port 8888.

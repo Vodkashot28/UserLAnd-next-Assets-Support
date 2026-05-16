@@ -1,0 +1,1 @@
+PyTorch Demo — Installs PyTorch (CPU) and runs a quick tensor smoke-test to verify your environment.

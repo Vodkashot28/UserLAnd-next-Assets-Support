@@ -1,0 +1,1 @@
+Ubuntu 22.04 LTS — Machine Learning edition with CUDA-compatible toolchain, Python 3.10, and pip.

@@ -1,0 +1,1 @@
+Debian 12 Bookworm — AI-ready distribution with Python 3.11, pip, and common ML tooling pre-configured.

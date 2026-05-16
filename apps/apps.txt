@@ -4,9 +4,17 @@ Debian, Distribution, debian, true, true, false, 1
 Arch, Distribution, arch, true, true, false, 1
 Kali, Distribution, kali, true, true, false, 1
 Alpine, Distribution, alpine, true, true, false, 1
+debian12, Distribution, debian12, true, true, false, 12
+ubuntu2204, Distribution, ubuntu2204, true, true, false, 22
 LXDE, Desktop, debian, false, true, false, 1
 XFCE, Desktop, debian, false, true, false, 1
 Firefox, Browser, debian, false, true, false, 1
 LibreOffice, Office, debian, false, true, false, 1
 Gimp, Office, debian, false, true, false, 1
 Git, Development, debian, false, true, false, 1
+jupyterlab, AI/ML, debian12, false, true, false, 4
+pytorch-demo, AI/ML, debian12, true, false, false, 2
+onnx-runtime, AI/ML, debian12, true, false, false, 1
+vscode-server, Development, debian12, true, true, false, 1
+ssh-key-manager, Networking, debian12, true, true, false, 1
+filesystem-backup, Utility, debian12, true, false, false, 1
