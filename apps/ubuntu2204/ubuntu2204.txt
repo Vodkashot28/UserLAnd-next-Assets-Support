@@ -1,1 +1,1 @@
-Ubuntu 22.04 LTS — Machine Learning edition with CUDA-compatible toolchain, Python 3.10, and pip.
+Ubuntu 22.04 LTS base system optimized for ML. Provides vendor-supported packages for TensorFlow, PyTorch, and CUDA (CPU builds only in proot).

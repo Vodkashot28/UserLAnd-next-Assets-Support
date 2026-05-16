@@ -1,1 +1,1 @@
-ONNX Runtime — High-performance inference engine for ONNX models. Run exported ML models from PyTorch, TensorFlow, and more.
+ONNX Runtime engine for running pretrained models. Includes verification script to confirm installation and test inference.
