@@ -1,0 +1,1 @@
+ZenCode dynamic local backend context server and hybrid MCP host. Provides a Rust-based daemon for routing AI prompts, managing LanceDB vector sync, and orchestrating local/cloud model inference.

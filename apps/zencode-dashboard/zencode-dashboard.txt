@@ -1,0 +1,1 @@
+Terminal User Interface to monitor and control local ZenCode-Server nodes. Displays daemon status, CPU/memory, cloud connections, and provides keyboard shortcuts for toggling routing modes and syncing LanceDB.

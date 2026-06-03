@@ -18,4 +18,5 @@ onnx-runtime, AI/ML, debian12, true, false, false, 1
 vscode-server, Development, debian12, true, true, false, 1
 ssh-key-manager, Networking, debian12, true, true, false, 1
 zencode-server, Development, debian12, true, false, false, 1
+zencode-dashboard, Development, debian12, true, false, false, 1
 filesystem-backup, Utility, debian12, true, false, false, 1

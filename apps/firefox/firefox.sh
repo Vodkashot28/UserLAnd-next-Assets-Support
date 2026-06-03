@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 
 SCRIPT_PATH=$(realpath ${BASH_SOURCE})
 sudo rm -f $SCRIPT_PATH

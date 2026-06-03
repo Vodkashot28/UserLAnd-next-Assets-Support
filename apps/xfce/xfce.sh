@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 
 SCRIPT_PATH=$(realpath ${BASH_SOURCE})
 sudo rm -f $SCRIPT_PATH
@@ -19,18 +19,24 @@ if grep -q "^/usr/bin/startxfce4" ~/.vnc/xstartup; then
    echo "xstartup already setup"
 else
    mkdir -p ~/.vnc
-   echo 'xrdb $HOME/.Xresources' > ~/.vnc/xstartup
-   echo 'xsetroot -solid grey' > ~/.vnc/xstartup
-   echo '/usr/bin/startxfce4' > ~/.vnc/xstartup
+   cat > ~/.vnc/xstartup << 'XVNC'
+#!/bin/sh
+xrdb $HOME/.Xresources
+xsetroot -solid grey
+/usr/bin/startxfce4
+XVNC
    DE_CHANGED=1
 fi
 
 if grep -q "^/usr/bin/startxfce4" ~/.xinitrc; then
    echo "xinitrc already setup"
 else
-   echo 'xrdb $HOME/.Xresources' > ~/.xinitrc
-   echo 'xsetroot -solid grey' > ~/.xinitrc
-   echo '/usr/bin/startxfce4' > ~/.xinitrc
+   cat > ~/.xinitrc << 'XINIT'
+#!/bin/sh
+xrdb $HOME/.Xresources
+xsetroot -solid grey
+/usr/bin/startxfce4
+XINIT
    DE_CHANGED=1
 fi
 

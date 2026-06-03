@@ -1,18 +1,15 @@
-#! /bin/bash
+#!/bin/bash
+SCRIPT_PATH=$(realpath "${BASH_SOURCE}")
+rm -f "$SCRIPT_PATH"
 
-SCRIPT_PATH=$(realpath ${BASH_SOURCE})
-sudo rm -f $SCRIPT_PATH
-
-if [ ! -f /usr/bin/git ]; then
-   sudo DEBIAN_FRONTEND=noninteractive apt -y update
-   sudo DEBIAN_FRONTEND=noninteractive apt -y --no-install-recommends install git-gui
-fi
-
-if [[ $? != 0 ]]; then
-   read -rsp $'An error occurred installing packages, please try again and if it persists provide this log to the developer.\nPress any key to close...\n' -n1 key
-   exit
+if [ ! -f /usr/bin/git-gui ]; then
+   DEBIAN_FRONTEND=noninteractive apt -y update
+   DEBIAN_FRONTEND=noninteractive apt -y --no-install-recommends install git-gui
+   if [[ $? != 0 ]]; then
+      read -rsp $'An error occurred installing packages, please try again and if it persists provide this log to the developer.\nPress any key to close...\n' -n1 key
+      exit
+   fi
 fi
 
 git gui
-
 exit
